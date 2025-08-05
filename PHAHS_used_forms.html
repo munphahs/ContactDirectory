@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Health & Applied Health Sciences</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Population Health & Applied Health Sciences</h1>
+        <h2>Find Forms by Keyword OR Category</h2>
+
+<!-- Search Box and Category & Subcategory Dropdown in Same Line -->
+<div class="search-category-container">
+    <input type="text" id="searchInput" placeholder="Enter any keyword..." oninput="searchForms()" />
+    <select id="categoryFilter" onchange="handleCategorySelection()">
+        <option value="">Category - ALL</option>
+        <option value="Finance / Travel">Finance / Travel</option>
+        <option value="Payroll and HR">Payroll and HR</option>
+        <option value="Academic">Academic</option>
+        <option value="Global Health">Global Health</option>
+        <option value="Indigenous Health">Indigenous Health</option>
+        <option value="Payroll and HR">Payroll and HR</option>
+        <!-- Add more categories as needed -->
+    </select>
+    <!-- <select id="subcategoryFilter" onchange="filterResultsByCategoryAndSubCategory(getSelectedCategory(), this.value)">
+        <option value="">Subcategory - ALL</option>      
+    </select> -->
+</div>
+
+
+        <!-- Results Table -->
+        <div class="results-container">
+            <table id="formListResults">
+                <thead>
+                    <tr>
+                        <th>Form Name</th>
+                        <th>Category</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTableBody">
+                    <!-- Filtered results will appear here -->
+                </tbody>                
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
