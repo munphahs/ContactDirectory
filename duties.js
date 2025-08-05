@@ -101,6 +101,8 @@ window.dutiesMap = {
       "Information delivery to undergraduate studnets",
     "Community Engagement - Phase 2 Community Placements",
       "Organization of the rural site visit in April/May for undergraduate phase 2 learners",
+    "Class attendance"
+    "Liaison with UGME and Distributed Medical Office",
   ],
 
   "Beverly Edwards": [
