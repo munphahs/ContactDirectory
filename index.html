@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty & Staff Directory</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header-flex">
+      <img src="images/university-logo.png" alt="University Logo" class="logo" />
+      <h1 class="page-title">Faculty of Medicine<br>Population Health and Applied Health Sciences</h1>
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search by name or keyword ..." />
+      
+
+      <!-- Department Filter -->
+      <select id="departmentFilter" onchange="toggleAdminOptions()">
+        <option value="">All Faculties and Staff</option>
+        <option value="Faculty">Faculty</option>
+        <option value="Administration">Administration</option>
+        <option value="Retired">Retired</option>
+      </select>
+
+      <!-- Admin Sub-Department Filter -->
+      <select id="adminSubFilter" style="display: none;">
+        <option value="">Select Administration Area</option>
+        <option value="Manager">Manager</option>
+        <option value="Payroll, Leave, MUCEP, ISWEP, GradSWEP, TA, RA">Payroll, Leave, MUCEP, ISWEP, GradSWEP, TA, RA</option>
+        <option value="Travel, Reimbursement and Event">Travel, Reimbursement and Event</option>
+        <option value="Global Health, Social Accountability, PGME, OPED">Global Health, Social Accountability, PGME, OPED</option>
+        <option value="Indigenous Health">Indigenous Health</option>
+        <option value="UGME, Community Engagement">UGME, Community Engagement</option>
+        <option value="MPH, Course Evaluations, Grades">MPH, Course Evaluations, Grades</option>
+        <option value="Clinical Epidemiology, Community Health, Award">Clinical Epidemiology, Community Health, Award</option>
+        <option value="MAHSR, MHE, MPH, Course Offerings & Schedule, Calendar">MAHSR, MHE, MPH, Course Offerings & Schedule, Calendar</option>
+      </select>
+
+      <!-- Faculty Sub-Department Filter -->
+      <select id="facultySubFilter" style="display: none;">
+        <option value="">Select Faculty Area</option>
+        <option value="Associate Dean">Associate Dean</option>
+        <option value="Assistant Professor">Assistant Professor</option>
+        <option value="Associate Professor">Associate Professor</option>
+        <option value="Professor">Professor</option>
+        <option value="Clinical Epidemiology">Clinical Epidemiology</option>
+        <option value="Ethics">Ethics</option>
+        <option value="Honorary Research Professor">Honorary Research Professor</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <!-- Frequently Used Files/Documents -->
+    <div class="form-link-box">
+      <i class="fas fa-file-alt"></i>
+      <h2>Frequently Used Forms / Documents</h2>
+      <a href="C:\Users\santoshp\OneDrive - Memorial University\PHAHS\Telephone Directory\Project 1 Updated - Contact  for University Faculties and staff 2\updated\PHAHS_used_forms.html" target="_blank">Click Here</a>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="contact-list" id="contactListContainer"></div>
+  </div>
+
+  <!-- Flashcard Modal -->
+  <div id="flashcardModal" class="flashcard-modal">
+    <div class="flashcard" id="flashcardCard">
+      <!-- Front Side -->
+      <div class="flashcard-front">
+        <h2 id="flashcardName"></h2>
+        <p id="flashcardEmail"></p>
+        <button type="button" onclick="flipCard()">View Duties</button>
+      </div>
+
+      <!-- Back Side -->
+      <div class="flashcard-back">
+        <h3>Duties & Responsibilities</h3>
+        <ul id="dutiesList"></ul>
+        <div class="flashcard-buttons">
+          <button type="button" onclick="flipCard()">Back to Info</button>
+          <button type="button" onclick="closeFlashcard()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="contacts.js"></script>
+  <script src="duties.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Flashcard Drag Support -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const flashcard = document.getElementById("flashcardCard");
+      if (!flashcard) return;
+
+      let isDragging = false;
+      let offsetX = 0, offsetY = 0;
+
+      flashcard.querySelectorAll('.flashcard-front, .flashcard-back').forEach(side => {
+        side.style.cursor = 'grab';
+
+        side.addEventListener('mousedown', e => {
+          isDragging = true;
+          const rect = flashcard.getBoundingClientRect();
+          offsetX = e.clientX - rect.left;
+          offsetY = e.clientY - rect.top;
+          flashcard.style.position = 'absolute';
+          flashcard.style.zIndex = '1001';
+          flashcard.style.cursor = 'grabbing';
+        });
+      });
+
+      document.addEventListener("mousemove", e => {
+        if (!isDragging) return;
+        const maxLeft = window.innerWidth - flashcard.offsetWidth;
+        const maxTop = window.innerHeight - flashcard.offsetHeight;
+        const left = Math.min(Math.max(e.clientX - offsetX, 0), maxLeft);
+        const top = Math.min(Math.max(e.clientY - offsetY, 0), maxTop);
+        flashcard.style.left = `${left}px`;
+        flashcard.style.top = `${top}px`;
+      });
+
+      document.addEventListener("mouseup", () => {
+        if (isDragging) {
+          isDragging = false;
+          flashcard.style.cursor = 'grab';
+        }
+      });
+    });
+  </script>
+
+  <!-- Show/hide sub-filters logic -->
+  <script>
+    function toggleAdminOptions() {
+      const departmentSelect = document.getElementById("departmentFilter");
+      const adminSubFilter = document.getElementById("adminSubFilter");
+      const facultySubFilter = document.getElementById("facultySubFilter");
+
+      const deptVal = departmentSelect.value;
+      adminSubFilter.style.display = deptVal === "Administration" ? "inline-block" : "none";
+      facultySubFilter.style.display = deptVal === "Faculty" ? "inline-block" : "none";
+
+      if (deptVal !== "Administration") adminSubFilter.selectedIndex = 0;
+      if (deptVal !== "Faculty") facultySubFilter.selectedIndex = 0;
+    }
+  </script>
+</body>
+</html>

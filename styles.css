@@ -1,0 +1,463 @@
+/* ====== GLOBAL FONTS ====== */
+:root {
+  --body-font: 'Montserrat', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --heading-font: 'Merriweather', 'Georgia', serif;
+  --primary-color: #1a0dab;
+  --link-color: #0066cc;
+  --hover-link-color: #004a99;
+  --card-bg-hover: #f8f8ff;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ====== CONTAINER & HEADER ====== */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0 10px;
+}
+
+.logo {
+  width: 120px;
+  object-fit: contain;
+}
+
+.page-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #060606;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ====== SEARCH & FILTERS BAR ====== */
+.search-filter {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* ====== CONTACT CARDS ====== */
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  background: var(--card-bg-hover);
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.contact-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background-color: #f0f0f0;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 700;
+}
+
+.contact-info p {
+  font-size: 1.25rem;
+  margin: 4px 0;
+  color: #444;
+}
+
+.contact-info p strong {
+  color: #1d1d1f;
+}
+
+.contact-info a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: var(--hover-link-color);
+  text-decoration: underline;
+}
+
+.profile-link {
+  color: var(--primary-color);
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+.duties-link {
+  font-size: 1.2rem;
+  margin-top: 8px;
+  color: #663399;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.duties-link:hover {
+  color: #472c8b;
+}
+
+/* ====== FLASHCARD MODAL ====== */
+.flashcard-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.flashcard-modal.show {
+  display: flex;
+}
+
+.flashcard {
+  width: 90vw;              /* ✅ Full viewport width with padding */
+  max-width: 700px;         /* ✅ Restrict max width */
+  perspective: 1000px;
+  position: relative;
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;              /* ✅ Ensure full width */
+  min-height: 220px;        /* ✅ Prevent collapse */
+  backface-visibility: hidden;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  padding: 24px 32px;
+  transition: transform 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.flashcard-front {
+  transform: rotateY(0);
+  z-index: 2;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+}
+
+.flashcard.flipped .flashcard-front {
+  transform: rotateY(180deg);
+}
+
+.flashcard.flipped .flashcard-back {
+  transform: rotateY(0);
+}
+
+#flashcardName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+#flashcardEmail {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+#dutiesList {
+  list-style: disc;
+  margin-left: 18px;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+#dutiesList li {
+  margin-bottom: 6px;
+}
+
+.flashcard button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.flashcard-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.flashcard-buttons button {
+  flex: 1;
+}
+
+.flashcard button:hover {
+  background-color: #388e3c;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .flashcard {
+    max-width: 95%;
+    height: auto;
+  }
+
+  .flashcard-front,
+  .flashcard-back {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .contact-list {
+    grid-template-columns: 1fr;
+  }
+
+  .search-filter {
+    flex-direction: column;
+  }
+
+  .search-filter input,
+  .search-filter select {
+    max-width: 100%;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .flashcard {
+    max-width: 95%;
+    height: auto;
+  }
+
+  .flashcard-front,
+  .flashcard-back {
+    height: auto;
+    padding: 20px;
+  }
+
+  .flashcard button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*---- ANIMATION FOR CARD APPEARANCE------*/
+
+.contact-card {
+  animation: fadeInUp 0.3s ease;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flashcard-header {
+  cursor: grab;
+}
+
+:root {
+  --body-font: 'Montserrat', sans-serif;
+  --heading-font: 'Merriweather', serif;
+  --primary-color: #1a0dab;
+  --link-color: #0066cc;
+  --hover-link-color: #004a99;
+  --card-hover-bg: #f8f8ff;
+}
+
+body {
+  font-family: var(--body-font);
+  background: #f5f5f7;
+  margin: 0;
+  color: #1d1d1f;
+}
+
+/* Container and Header */
+.container { max-width: 1200px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.header-flex { display: flex; align-items: center; gap: 20px; padding-bottom: 10px; }
+.logo { width: 120px; }
+.page-title { font-family: var(--heading-font); font-size: 1.9rem; font-weight: bold; margin: 0; }
+
+/* Search Filters */
+.search-filter { display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 30px; position: sticky; top: 0; background: white; z-index: 10; }
+.search-filter input, .search-filter select { padding: 10px; font-size: 1rem; max-width: 300px; border: 1px solid #ccc; border-radius: 8px; }
+
+/* Contact Cards */
+.contact-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: 24px; }
+.contact-card { background: #fff; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; animation: fadeInUp 0.3s ease; }
+.contact-card:hover { background: var(--card-hover-bg); transform: scale(1.02); box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
+.contact-photo { width: 80px; height: 80px; object-fit: cover; border-radius: 50%; border: 2px solid #ddd; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.contact-info h2 { font-size: 1.25rem; margin: 0; font-weight: bold; }
+.contact-info p { font-size: 0.95rem; margin: 4px 0; }
+.profile-link, .contact-info a { color: var(--link-color); text-decoration: none; }
+.profile-link:hover, .contact-info a:hover { color: var(--hover-link-color); text-decoration: underline; }
+
+/* Duties link */
+.duties-link { font-size: 0.9rem; color: #663399; text-decoration: underline; cursor: pointer; }
+.duties-link:hover { color: #472c8b; }
+
+/* Modal & Flashcard */
+.flashcard-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; padding: 20px; }
+.flashcard-modal.show { display: flex; }
+.flashcard { width: 90vw; max-width: 700px; perspective: 1000px; position: relative; }
+.flashcard-side { position: absolute; width: 100%; min-height: 220px; backface-visibility: hidden; background: #fff; border-radius: 12px; padding: 24px 32px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: flex; flex-direction: column; overflow-y: auto; transition: transform 0.6s; }
+.flashcard-front { transform: rotateY(0); }
+.flashcard-back  { transform: rotateY(180deg); }
+.flashcard.flipped .flashcard-front { transform: rotateY(180deg); }
+.flashcard.flipped .flashcard-back  { transform: rotateY(0); }
+
+/* Flashcard Text & Buttons */
+#flashcardName { font-family: var(--heading-font); font-size: 1.25rem; margin-bottom: 6px; }
+#flashcardEmail { font-size: 0.95rem; margin-bottom: 16px; color: #333; }
+#dutiesList { list-style: disc; margin-left: 18px; padding: 0; font-size: 0.95rem; line-height: 1.4; color: #444; }
+#dutiesList li { margin-bottom: 6px; }
+.flashcard-buttons { display: flex; gap: 12px; margin-top: auto; }
+.flashcard-buttons button { flex: 1; padding: 8px; font-size: 0.95rem; background: #4CAF50; color: #fff; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s; }
+.flashcard-buttons button:hover { background: #388e3c; }
+
+/* Drag handle */
+#flashcardHandleFront, #flashcardHandleBack { cursor: grab; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flashcard { max-width: 95%; }
+  .flashcard-side { padding: 20px; }
+}
+@media (max-width: 600px) {
+  .header-flex { flex-direction: column; align-items: flex-start; }
+  .contact-list { grid-template-columns: 1fr; }
+  .page-title { font-size: 1.8rem; }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* To add for Form link box */
+.form-link-box {
+  border: 1px solid #007BFF;
+  border-radius: 2px;
+  padding: 10px;
+  max-width: 250px;
+  position: absolute;
+  top: 55px;
+  right: 350px;
+  margin: 0;
+  text-align: center;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-link-box i {
+  font-size: 13px;
+  color: #007BFF;
+  margin-bottom: 12px;
+}
+
+.form-link-box h2 {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-link-box a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff7a;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.form-link-box a:hover {
+  background-color: #0056b3;
+}
+
