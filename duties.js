@@ -38,7 +38,8 @@ window.dutiesMap = {
   "Krista Fowler": [
     "Payroll and hiring for RA staff, graduate and undergraduate students, MUCEP, ISWEP, and GradSWEP students, and Teaching Assistants",
     "Processing leave for RAs",
-    "Space allocation for faculty, staff, RA staff, and some graduate students"
+    "Space allocation for faculty, staff, RA staff, and some graduate students",
+    "Create Journal Voucher"
   ],
 
   "Currently Vacant": [
