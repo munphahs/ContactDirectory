@@ -31,7 +31,7 @@ window.dutiesMap = {
     "Create and maintain databases"
 ],
   
-    "Kathleen (Kat) Wall": [
+    "Kathleen(Kat) Wall": [
     "Primary liaison for the Associate Dean's Office",
     "Manages scheduling and calendar coordination",
     "Organizes meetings and prepares/distributes minutes",
