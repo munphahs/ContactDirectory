@@ -21,7 +21,7 @@ window.dutiesMap = {
 ],
 
 
-  "Natasha Taylor": [
+  "Kathleen (Kat) Wall": [
     "Primary liaison for the Associate Dean's Office",
     "Manages scheduling and calendar coordination",
     "Organizes meetings and prepares/distributes minutes",
