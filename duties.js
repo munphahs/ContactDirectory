@@ -17,7 +17,7 @@ window.dutiesMap = {
     "Send out emails to PHAHS list serve",
     "Print Services and Business Card ordering",
     "Triware (Ink Orders)",
-    "XEROX Support Toner Orders",
+    "XEROX Support Toner Orders"
 ],
 
   
@@ -28,7 +28,7 @@ window.dutiesMap = {
     "Report generation",
     "Presentation and poster development",
     "Monitor and disseminate questionnaires",
-    "Create and maintain databases",
+    "Create and maintain databases"
 ],
   
     "Kathleen (Kat) Wall": [
@@ -42,7 +42,7 @@ window.dutiesMap = {
     "Administers hiring process for Teaching Assistants",
     "Manages Associate Dean's calendar, including booking with faculty, staff, guests, and internal events",
     "Circulates email on behalf of the Associate Dean",
-    "Prepares agendas and records minutes for Division meetings",
+    "Prepares agendas and records minutes for Division meetings"
   ],
 
   "Krista Fowler": [
