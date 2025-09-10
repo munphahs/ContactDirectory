@@ -20,8 +20,18 @@ window.dutiesMap = {
     "XEROX Support Toner Orders",
 ],
 
-
-  "Kathleen (Kat) Wall": [
+  
+   "Natasha Taylor": [
+    "Administrative support to the Office of Social Accountability and the Centre for Bioethics:", 
+    "Coordinate meetings",
+    "Assisting with small events and conferences including logistical arrangements for travel",
+    "Report generation",
+    "Presentation and poster development",
+    "Monitor and disseminate questionnaires",
+    "Create and maintain databases",
+],
+  
+    "Kathleen (Kat) Wall": [
     "Primary liaison for the Associate Dean's Office",
     "Manages scheduling and calendar coordination",
     "Organizes meetings and prepares/distributes minutes",
