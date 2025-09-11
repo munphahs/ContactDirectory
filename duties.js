@@ -32,7 +32,7 @@ window.dutiesMap = {
 ],
   
     "Kat Wall": [
-    "Primary liaison for the Associate Dean's Office",
+    "Office of the Associate Dean, Assistant to the Associate Dean",
     "Manages scheduling and calendar coordination",
     "Organizes meetings and prepares/distributes minutes",
     "Supports processes related to sabbaticals, retirements, and academic appointments",
