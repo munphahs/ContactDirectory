@@ -63,8 +63,8 @@ const formListData = [
   {formName: "Travel Request", category: "Travel", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/TRAVEL_REQUEST.pdf"},
   {formName: "Travel Advance Request", category: "Travel", link: "https://www.mun.ca/medicine/media/production/medicine/documents/Travel-Advance-Form-August-2019.pdf"},
   {formName: "Travel Claim", category: "Travel", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/Travel_Expense_Claim.xlsx"},
-  {formName: "Meals Per Diem plus incidental allowances", category: "Travel", link: "https://www.mun.ca/finance/our-services/travel/schedule-of-reimbursable-expenses/#PerDiem"},
-  {formName: "Daily Car Kilometer Report", category: "Travel", link: "https://www.google.com/url?client=internal-element-cse&cx=013295038259436780783:winyxwvcb3o&q=https://www.mun.ca/medicine/media/production/medicine/documents/Daily-Car-Kilo-Report-Form-(2).docx&sa=U&ved=2ahUKEwj7pP31pbWOAxWMFFkFHXwyK5cQFnoECAEQAQ&usg=AOvVaw3Ayg9y6vGs3h-RmXKd-_Bn&fexp=72986053,72986052"},
+  {formName: "Meals Per Diem plus incidental allowances", category: "Travel", link: "https://www.mun.ca/finance/financial-services/travel/schedule-of-reimbursable-expenses/#PerDiem"},
+  {formName: "Daily Car Kilometer Report", category: "Travel", link: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.mun.ca%2Fmedicine%2Fmedia%2Fproduction%2Fmedicine%2Fdocuments%2FDaily-Car-Kilo-Report-Form-(2).docx&wdOrigin=BROWSELINK"},
   {formName: "Print & Mail Requisition", category: "Purchase", link: "https://www.mun.ca/printandmail/media/production/memorial/administrative/print-and-mail-services/media-library/pdfs/PrintAndMailReqForWeb.pdf"},
   {formName: "Internal Requisition", category: "Purchase", link: "https://www.mun.ca/medicine/media/production/medicine/documents/FINANCE%20-%20Internal%20Requisition%20Form.pdf"},
   {formName: "Visitor Approval", category: "Events & Hosting", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/VisitorApproval.pdf"},
@@ -87,3 +87,4 @@ window.onload = function() {
     handleCategorySelection(); // Automatically display all forms on load
 
 };
+
