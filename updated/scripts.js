@@ -71,7 +71,7 @@ const formListData = [
   {formName: "Vendor Direct Deposit", category: "Purchase", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/Vendor_Direct_Deposit_Information.pdf"},
   {formName: "Eligibility of Membership", category: "Other", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/Eligibility_of_Membership.pdf"},
   {formName: "Affidavit (Declaration of Lost or Unavailable original receipts)", category: "Travel", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/Declaration%20Form%20for%20Lost%20Receipts.pdf"},
-  {formName: "Catering Pre-Approval", category: "Events & Hosting", link: "https://www.mun.ca/medicine/media/production/medicine/documents/Catering-Hosting-Pre-Approval.pdf"},
+  {formName: "Catering Pre-Approval", category: "Events & Hosting", link: "https://www.mun.ca/medicine/media/production/medicine/documents/Catering-Hosting-Pre-Approval%20-%20No%20Password.pdf"},
   {formName: "Schedule of Reimbursable Expenses.", category: "Events & Hosting", link: "https://www.mun.ca/finance/financial-services/travel/schedule-of-reimbursable-expenses/"},
   {formName: "Deposit Control", category: "Deposit", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/DEPOSIT_CONTROL_FORM2.pdf"},
   {formName: "Deposit Control - Online Banking", category: "Deposit", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/DEP_CTRL_FRM_Online.pdf"}
@@ -87,4 +87,5 @@ window.onload = function() {
     handleCategorySelection(); // Automatically display all forms on load
 
 };
+
 
