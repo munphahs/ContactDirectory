@@ -87,3 +87,4 @@ window.onload = function() {
     handleCategorySelection(); // Automatically display all forms on load
 
 };
+
