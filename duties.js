@@ -9,7 +9,7 @@ window.dutiesMap = {
 ],
 
   
-  "Santosh Poudel": [
+  "Felix Oloyede": [
     "Prepare and manage: reimbursement claims, travel expense claims, internal requisitions, catering pre-approvals, and PDTER claims", 
     "Assist with small events and conferences",
     "Website updates",
@@ -31,7 +31,7 @@ window.dutiesMap = {
     "Create and maintain databases"
 ],
   
-    "Kat Wall": [
+    "Martina Krskova": [
     "Office of the Associate Dean, Assistant to the Associate Dean",
     "Manages scheduling and calendar coordination",
     "Organizes meetings and prepares/distributes minutes",
