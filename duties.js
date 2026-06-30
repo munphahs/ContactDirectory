@@ -9,7 +9,7 @@ window.dutiesMap = {
 ],
 
   
-  "Felix Oloyede": [
+  "Julie Oakley": [
     "Prepare and manage: reimbursement claims, travel expense claims, internal requisitions, catering pre-approvals, and PDTER claims", 
     "Assist with small events and conferences",
     "Website updates",
