@@ -74,7 +74,7 @@ const formListData = [
   {formName: "Affidavit (Declaration of Lost or Unavailable original receipts)", category: "Travel", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/Declaration%20Form%20for%20Lost%20Receipts.pdf"},
   {formName: "Catering Pre-Approval", category: "Events & Hosting", link: "https://www.mun.ca/medicine/media/production/medicine/documents/Catering-Hosting-Pre-Approval%20-%20No%20Password.pdf"},
   {formName: "Schedule of Reimbursable Expenses.", category: "Events & Hosting", link: "https://www.mun.ca/finance/our-services/travel/schedule-of-reimbursable-expenses/"},
-{formName: "Daculty Onboarding Guide", category: "Other", link: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmunphahs%2FContactDirectory%2Frefs%2Fheads%2Fmain%2FFaculty%2520Onboarding%2520Guide.docx&wdOrigin=BROWSELINK"},
+{formName: "Faculty Onboarding Guide", category: "Other", link: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmunphahs%2FContactDirectory%2Frefs%2Fheads%2Fmain%2FFaculty%2520Onboarding%2520Guide.docx&wdOrigin=BROWSELINK"},
   {formName: "Deposit Control", category: "Deposit", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/DEPOSIT_CONTROL_FORM2.pdf"},
   {formName: "Deposit Control - Online Banking", category: "Deposit", link: "https://www.mun.ca/finance/media/production/memorial/administrative/financial-and-administrative-services/media-library/forms/DEP_CTRL_FRM_Online.pdf"}
 ];
