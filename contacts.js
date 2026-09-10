@@ -57,5 +57,6 @@ const contactListData = [
   { firstName: "Rose", lastName: "Ricciardelli", area: "Cross-Appointed", positionType: "Professor, Marine Institute", ext: "778-0361 ", email: "rose.ricciardelli@mi.mun.ca", office: "", location: "Marine Institute", profileUrl: "https://www.mi.mun.ca/departments/oceansafetyresearchunitosru/ourteam/" },
   { firstName: "Sevtap", lastName: "Savas", area: "Cross-Appointed", positionType: "Professor, Division of BioMedical Sciences", ext: "864-6507 ", email: "savas@mun.ca", office: "Division of Biomedical Sciences", location: "", profileUrl: "https://www.mun.ca/medicine/faculty-and-staff-resources/faculty-a-z/savas-sevtap.php" },
   { firstName: "Eric", lastName: "Tenkorang", area: "Cross-Appointed", positionType: "Professor, Sociology", ext: "864-6507 ", email: "", office: "", location: "", profileUrl: "" },
+  { firstName: "Zaina", lastName: "Albalawi", area: "Cross-Appointed", positionType: "Associate Professor, Medicine", ext: "", email: "zalbalawi@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Brenda", lastName: "Wilson", area: "Faculty", positionType: "Professor", ext: "", email: "bwilson@mun.ca", office: "", location: "", profileUrl: "https://www.mun.ca/medicine/faculty-and-staff-resources/faculty-a-z/wilson-brenda.php" },
 ];
