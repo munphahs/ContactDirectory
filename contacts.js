@@ -64,7 +64,6 @@ const contactListData = [
   { firstName: "Zaina", lastName: "Albalawi", area: "Cross-Appointed", positionType: "Associate Professor, Medicine", ext: "", email: "zalbalawi@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Brenda", lastName: "Wilson", area: "Faculty", positionType: "Professor", ext: "", email: "bwilson@mun.ca", office: "", location: "", profileUrl: "https://www.mun.ca/medicine/faculty-and-staff-resources/faculty-a-z/wilson-brenda.php" },
   { firstName: "Karen", lastName: "Dickson", area: "Adjunct", positionType: "", ext: "", email: "kdickson@mun.ca", office: "", location: "", profileUrl: "" },
-  { firstName: "Bradley", lastName: "Furlong", area: "Adjunct", positionType: "", ext: "", email: "bradley.furlong@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Daniela", lastName: "Kempkens", area: "Adjunct", positionType: "", ext: "", email: "daniela.kempkens@nlhealthservices.ca", office: "", location: "", profileUrl: "" },
   { firstName: "John", lastName: "Knight", area: "Adjunct", positionType: "", ext: "", email: "john.knight@nlhealthservices.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Matthew", lastName: "Leyenaar", area: "Adjunct", positionType: "", ext: "", email: "matthew.leyenaar@upei.ca", office: "", location: "", profileUrl: "" },
