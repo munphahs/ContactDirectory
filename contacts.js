@@ -64,4 +64,13 @@ const contactListData = [
   { firstName: "Nicholas", lastName: "Smith", area: "Cross-Appointed", positionType: "Clinical Assistant Professor, Discipline of Surgery", ext: "", email: "ncs662@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Zaina", lastName: "Albalawi", area: "Cross-Appointed", positionType: "Associate Professor, Medicine", ext: "", email: "zalbalawi@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Brenda", lastName: "Wilson", area: "Faculty", positionType: "Professor", ext: "", email: "bwilson@mun.ca", office: "", location: "", profileUrl: "https://www.mun.ca/medicine/faculty-and-staff-resources/faculty-a-z/wilson-brenda.php" },
+  { firstName: "Karen", lastName: "Dickson", area: "Adjunct", positionType: "", ext: "", email: "kdickson@mun.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Bradley", lastName: "Furlong", area: "Adjunct", positionType: "", ext: "", email: "bradley.furlong@mun.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Daniela", lastName: "Kempkens", area: "Adjunct", positionType: "", ext: "", email: "daniela.kempkens@nlhealthservices.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "John", lastName: "Knight", area: "Adjunct", positionType: "", ext: "", email: "john.knight@nlhealthservices.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Matthew", lastName: "Leyenaar", area: "Adjunct", positionType: "", ext: "", email: "matthew.leyenaar@upei.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Krista", lastName: "Mahoney", area: "Adjunct", positionType: "", ext: "", email: "kmahoneyn@mun.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Hensley", lastName: "Mariathas", area: "Adjunct", positionType: "", ext: "", email: "mhh682@mun.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Maria", lastName: "Matthews", area: "Adjunct", positionType: "", ext: "", email: "maria.matthews@schulich.uwo.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Robert", lastName: "Wilson", area: "Adjunct", positionType: "", ext: "", email: "r.wilson@mun.ca", office: "", location: "", profileUrl: "" },
 ];
