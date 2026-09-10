@@ -58,7 +58,6 @@ const contactListData = [
   { firstName: "Sevtap", lastName: "Savas", area: "Cross-Appointed", positionType: "Professor, Division of BioMedical Sciences", ext: "864-6507 ", email: "savas@mun.ca", office: "Division of Biomedical Sciences", location: "", profileUrl: "https://www.mun.ca/medicine/faculty-and-staff-resources/faculty-a-z/savas-sevtap.php" },
   { firstName: "Eric", lastName: "Tenkorang", area: "Cross-Appointed", positionType: "Professor, Sociology", ext: "864-6507 ", email: "", office: "", location: "", profileUrl: "" },
   { firstName: "Kim", lastName: "Cullen", area: "Cross-Appointed", positionType: "Assistant Professor, Human Kinetics", ext: "", email: "kcullen@mun.ca", office: "", location: "", profileUrl: "" },
-  { firstName: "Eric", lastName: "Tenkorang", area: "Cross-Appointed", positionType: "Professor, Sociology", ext: "864-6507 ", email: "", office: "", location: "", profileUrl: "" },
   { firstName: "Lea", lastName: "Lewis", area: "Cross-Appointed", positionType: "", ext: "", email: "leah.lewis@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Geoff", lastName: "Warden", area: "Cross-Appointed", positionType: "Clinical Assistant Professor, Anesthesia", ext: "", email: "gwarden@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Nicholas", lastName: "Smith", area: "Cross-Appointed", positionType: "Clinical Assistant Professor, Discipline of Surgery", ext: "", email: "ncs662@mun.ca", office: "", location: "", profileUrl: "" },
