@@ -69,6 +69,6 @@ const contactListData = [
   { firstName: "Matthew", lastName: "Leyenaar", area: "Adjunct", positionType: "", ext: "", email: "matthew.leyenaar@upei.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Krista", lastName: "Mahoney", area: "Adjunct", positionType: "", ext: "", email: "kmahoneyn@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Hensley", lastName: "Mariathas", area: "Adjunct", positionType: "", ext: "", email: "mhh682@mun.ca", office: "", location: "", profileUrl: "" },
-  { firstName: "Maria", lastName: "Matthews", area: "Adjunct", positionType: "", ext: "", email: "maria.matthews@schulich.uwo.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Maria", lastName: "Mathews", area: "Adjunct", positionType: "", ext: "", email: "maria.mathews@schulich.uwo.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Robert", lastName: "Wilson", area: "Adjunct", positionType: "", ext: "", email: "r.wilson@mun.ca", office: "", location: "", profileUrl: "" },
 ];
