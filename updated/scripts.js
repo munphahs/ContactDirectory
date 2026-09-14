@@ -60,7 +60,7 @@ function searchForms() {
 
 // Sample form data (replace with actual data or load dynamically from a database)
 const formListData = [
-    {formName: "Faculty Onboarding Guide", category: "Other", link: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmunphahs%2FContactDirectory%2Frefs%2Fheads%2Fmain%2FFaculty%2520Onboarding%2520Guide.docx&wdOrigin=BROWSELINK"},
+    {formName: "Faculty Onboarding Guide", category: "Other", link: "https://munphahs.github.io/ContactDirectory/Faculty%20Onboarding%20Guide.pdf"},
     {
   formName: "PHAHS Travel Information Sheet",
   category: "Travel",
