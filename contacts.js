@@ -67,5 +67,6 @@ const contactListData = [
   { firstName: "Syamala", lastName: "Buragadda", area: "Adjunct", positionType: "", ext: "", email: "sburagadda@mun.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Itai", lastName: "Malkin", area: "Adjunct", positionType: "", ext: "", email: "itai.malkin@nlhealthservices.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Maria", lastName: "Mathews", area: "Adjunct", positionType: "", ext: "", email: "maria.mathews@schulich.uwo.ca", office: "", location: "", profileUrl: "" },
+  { firstName: "Jason", lastName: "Stull", area: "Adjunct", positionType: "", ext: "", email: "jstull@upei.ca", office: "", location: "", profileUrl: "" },
   { firstName: "Robert", lastName: "Wilson", area: "Adjunct", positionType: "", ext: "", email: "r.wilson@mun.ca", office: "", location: "", profileUrl: "" },
 ];
